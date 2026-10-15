@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Tasks</title>
+</head>
+<body>
+  <h1>JavaScript Tasks</h1>
+
+  <h2>Task 1: Personal Introduction</h2>
+  <p>This task asks for my age, course and section, then displays my introduction in an alert.</p>
+
+  <h2>Task 2: Variable Reassignment</h2>
+  <p>The alert shows the changed values of var and let. The const value stays the same.</p>
+
+  <h2>Task 3: Favourite Things</h2>
+  <p>Enter my favourite food, colour and movie to see three sentences in an alert.</p>
+
+  <h2>Task 4: Find the Errors</h2>
+  <p>I changed the invalid variable name, did not declare city a second time, and used let for subject because its value changes.</p>
+  <pre><code>var name = "Rahul";
+let city = "Mathura";
+city = "Delhi";
+let subject = "JavaScript";
+subject = "HTML";
+console.log(name);</code></pre>
+
+  <script>
+    // Task 1
+    let studentName = "Kishlay Kumar";
+    let age = prompt("Task 1: What is your age?");
+    let course = prompt("What is your course?");
+    let section = prompt("What is your section?");
+
+    alert("Hello! My name is " + studentName + ". I am " + age +
+      " years old. I study " + course + " and my section is " + section + ".");
+
+    // Task 2
+    var school = "Old value";
+    let classroom = "Old value";
+    const country = "India";
+
+    school = "New value";
+    classroom = "New value";
+
+    alert("var: " + school + "\nlet: " + classroom + "\nconst: " + country);
+
+    // Task 3
+    let favouriteFood = prompt("Task 3: What is my favourite food?");
+    let favouriteColour = prompt("What is my favourite colour?");
+    let favouriteMovie = prompt("What is my favourite movie?");
+
+    alert("My favourite food is " + favouriteFood + ".\n" +
+      "My favourite colour is " + favouriteColour + ".\n" +
+      "My favourite movie is " + favouriteMovie + ".");
+
+    // Task 4: Corrected code
+    var name = "Rahul";
+    let city = "Mathura";
+    city = "Delhi";
+    let subject = "JavaScript";
+    subject = "HTML";
+    console.log(name);
+  </script>
+</body>
+</html>
